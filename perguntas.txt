@@ -1,0 +1,88 @@
+📐 Matemática – 25 perguntas
+
+1. Qual é o valor de π (pi) arredondado para duas casas decimais?
+   A) 3,12   B) 3,14   C) 3,16   D) 3,18   E) 3,10
+
+2. Qual é a derivada de x²?
+   A) 1      B) x      C) 2x     D) x²     E) 0
+
+3. Qual é a solução da equação 2x + 3 = 7?
+   A) 1      B) 2      C) 3      D) 4      E) 5
+
+4. Qual é a soma dos ângulos internos de um triângulo?
+   A) 90°    B) 180°   C) 270°   D) 360°   E) 45°
+
+5. Qual é o próximo número na sequência: 2, 4, 8, 16, ___?
+   A) 18     B) 20     C) 24     D) 30     E) 32
+
+6. Quanto é √144?
+   A) 10     B) 11     C) 12     D) 13     E) 14
+
+7. Em um triângulo retângulo, o seno de 30° é:
+   A) 0      B) 0,5    C) 1      D) √2/2   E) √3/2
+
+8. Qual é a fórmula da área de um círculo?
+   A) πr²    B) 2πr    C) πd     D) 2rπ²   E) r²π²
+
+9. Qual número é primo?
+   A) 4      B) 6      C) 9      D) 11     E) 15
+
+10. Quanto é 2⁵?
+    A) 16     B) 24     C) 32     D) 64     E) 128
+
+11. Qual é a média dos números 3, 5, 7 e 9?
+    A) 5      B) 6      C) 7      D) 8      E) 9
+
+12. Um ângulo reto tem quantos graus?
+    A) 30°    B) 45°    C) 60°    D) 90°    E) 180°
+
+13. O que é um número irracional?
+    A) Que não é divisível por 2
+    B) Que é negativo
+    C) Que não pode ser expresso como fração
+    D) Que é maior que 100
+    E) Que tem parte imaginária
+
+14. O logaritmo de 100 na base 10 é:
+    A) 1      B) 2      C) 10     D) 100    E) 0
+
+15. Qual é a fórmula do teorema de Pitágoras?
+    A) a + b = c
+    B) a² + b² = c²
+    C) ab = c
+    D) a² = b² + c²
+    E) a + b + c = 180
+
+16. O número 0 é considerado:
+    A) Primo   B) Par   C) Ímpar   D) Negativo   E) Imaginário
+
+17. O determinante da matriz [1 2; 3 4] é:
+    A) -2      B) -1     C) 0      D) 1      E) 2
+
+18. Qual é o valor absoluto de -15?
+    A) -15     B) 0      C) 15     D) 30     E) 1
+
+19. Um decágono possui quantos lados?
+    A) 6       B) 8      C) 10     D) 12     E) 14
+
+20. O fatorial de 4 (4!) é:
+    A) 12      B) 16     C) 20     D) 24     E) 30
+
+21. Um número dividido por zero é:
+    A) Zero    B) Infinito   C) Indeterminado   D) O próprio número   E) Negativo
+
+22. A equação x² + 4x + 4 = 0 tem:
+    A) Duas raízes reais e distintas
+    B) Uma raiz real dupla
+    C) Nenhuma raiz real
+    D) Duas raízes imaginárias
+    E) Três raízes
+
+23. A função f(x) = 2x + 3 é:
+    A) Linear   B) Quadrática   C) Exponencial   D) Logarítmica   E) Constante
+
+24. O número de Euler (e) é aproximadamente:
+    A) 2,14     B) 2,28     C) 2,71     D) 3,14     E) 3,71
+
+25. Qual é a raiz cúbica de 27?
+    A) 2        B) 3        C) 4        D) 5        E) 6
