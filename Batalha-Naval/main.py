@@ -13,22 +13,28 @@ def inicializar_tabuleiro (dimensoes):
 
     return tabuleiro
 
-def mostrar_tabuleiro(tabuleiro, id, dimensoes):
+def mostrar_tabuleiro(tabuleiro, id, dimensoes, letras):
     if id == 0: #usuário
         print ("SEU TABULEIRO")
         for x in range (dimensoes):
+            print (letras[x], "", end='')
             for y in range (dimensoes):
                 print (tabuleiro[x][y], "", end='')
             print()
     else: #máquina
         print ("TABULEIRO DA MÁQUINA")
         for x in range (dimensoes):
+            print (letras[x], "", end='')
             for y in range (dimensoes):
                 if (tabuleiro[x][y] == 1):
                     print (f"- ", end='')
                 else:
                     print (tabuleiro[x][y], "", end='')
             print ()
+    print (" ", end='')
+    for x in range (dimensoes):
+        print ("", x+1, end='')
+    print()
 
 def check(x, y, tabuleiro, dimensoes):
     if not 0 <= x <= dimensoes-1 and not 0 <= x <= dimensoes-1:
@@ -71,11 +77,11 @@ def maq_jogada(tabuleiro, dimensoes):
     return jogada(x, y, tabuleiro)
 
 
-def jogar(user, maquina, dimensoes):
+def jogar(user, maquina, dimensoes, letras):
     Upt, Mpt = 0, 0
     while True:
-        mostrar_tabuleiro(user, 0, dimensoes)
-        mostrar_tabuleiro(maquina, 1, dimensoes)
+        mostrar_tabuleiro(user, 0, dimensoes, letras)
+        mostrar_tabuleiro(maquina, 1, dimensoes, letras)
         Upt += user_jogada(maquina, dimensoes)
         Mpt += maq_jogada(user, dimensoes)
 
@@ -85,13 +91,15 @@ def jogar(user, maquina, dimensoes):
             return False
 
 def main():
-    dimensoes = 5
+    dimensoes = 10
     user = inicializar_tabuleiro(dimensoes)
     maquina = inicializar_tabuleiro(dimensoes)
+    letras = [chr(i+65) for i in range(dimensoes)]
+    print (letras)
     while True:
         match input("Escolha:\n\n1) Jogar\n2) Sair\n\n"):
             case "1":
-                if jogar(user, maquina, dimensoes):
+                if jogar(user, maquina, dimensoes, letras):
                     print ("VOCÊ GANHOU!")
                 else:
                     print ("VOCÊ PERDEU!")

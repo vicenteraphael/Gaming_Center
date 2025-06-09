@@ -12,7 +12,7 @@ perguntas = [
     "Qual número é primo?",
     "Quanto é 2⁵?",
     "Qual é a média dos números 3, 5, 7 e 9?",
-    "Um ângulo reto tem quantos graus?]"
+    "Um ângulo reto tem quantos graus?",
     "O que é um número irracional?",
     "O logaritmo de 100 na base 10 é:",
     "Qual é a fórmula do teorema de Pitágoras?",
@@ -25,8 +25,8 @@ perguntas = [
     "A equação x² + 4x + 4 = 0 tem:",
     "A função f(x) = 2x + 3 é:",
     "O número de Euler (e) é aproximadamente:",
-    "Qual é a raiz cúbica de 27?"
-    ]
+    "Qual é a raiz cúbica de 27?",
+]
 alternativas = [
     "A) 3,12   B) 3,14   C) 3,16   D) 3,18   E) 3,10",
     "A) 1      B) x      C) 2x     D) x²     E) 0",
@@ -42,12 +42,12 @@ alternativas = [
     "A) 30°    B) 45°    C) 60°    D) 90°    E) 180°",
     "A) Que não é divisível por 2\nB) Que é negativo\nC) Que não pode ser expresso como fração\nD) Que é maior que 100\nE) Que tem parte imaginária",
     "A) 1      B) 2      C) 10     D) 100    E) 0",
-    "A) a + b = c\nB) a² + b² = c²\nC) ab = c\nD) a² = b² + c²\nE) a + b + c = 180",
+    "A) a + b = c\nB) a² + b² = c²\nC) ab = c\nD) a = b² + c²\nE) a + b + c = 180",
     "A) Primo   B) Par   C) Ímpar   D) Negativo   E) Imaginário",
     "A) -2      B) -1     C) 0      D) 1      E) 2",
     "A) -15     B) 0      C) 15     D) 30     E) 1",
-    "A) 12      B) 16     C) 20     D) 24     E) 30",
     "A) 6       B) 8      C) 10     D) 12     E) 14",
+    "A) 12      B) 16     C) 20     D) 24     E) 30",
     "A) Zero    B) Infinito   C) Indeterminado   D) O próprio número   E) Negativo",
     "A) Duas raízes reais e distintas\nB) Uma raiz real dupla\nC) Nenhuma raiz real\nD) Duas raízes imaginárias\nE) Três raízes",
     "A) Linear   B) Quadrática   C) Exponencial   D) Logarítmica   E) Constante",
@@ -82,24 +82,23 @@ gabarito = [
     "B",
 ]
 
-def jogar(perguntas, alternativas, gabarito):
-    quiz = []
-    alts = []
-    gaba = []
-    n = 0
+def mapear_questoes(quiz, alts, gaba, perguntas, alternativas, gabarito):
     memo = [False]*25
+    n = 0
     while n < 10:
         rand = randint(0, 24)
         if not memo[rand]:
             n += 1
-            quiz.append(perguntas[n])
-            alts.append(alternativas[n])
-            gaba.append(gabarito[n])
+            quiz.append(perguntas[rand])
+            alts.append(alternativas[rand])
+            gaba.append(gabarito[rand])
             memo[rand] = True
+
+def jogar(quiz, alts, gaba):
     points = 0
     for i in range(10):
         print ("PONTUAÇÃO:", points)
-        ans = input(f"{quiz[i]}\n{alts[i]}\n")
+        ans = input(f"{i+1}. {quiz[i]}\n{alts[i]}\n").upper()
         if ans == gaba[i]:
             points += 1
             print ("\nCORRETO\n")
@@ -110,7 +109,9 @@ def jogar(perguntas, alternativas, gabarito):
 while True:
     match input("Escolha:\n\n1) Jogar\n2) Sair\n\n"):
         case "1":
-            jogar(perguntas, alternativas, gabarito)
+            quiz, alts, gaba = [], [], []
+            mapear_questoes(quiz, alts, gaba, perguntas, alternativas, gabarito)
+            jogar(quiz, alts, gaba)
         case "2":
             break
         case _:

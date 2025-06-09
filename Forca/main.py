@@ -1,7 +1,7 @@
 from random import randint
 
 def fill(palavra, Len, adivinha):
-    for i, letra in enumerate(palavra):
+    for letra in palavra:
         if letra == " ":
             adivinha.append("-")
             Len -= 1
@@ -23,13 +23,13 @@ def mapear(palavra):
     return mapa
 
 def mostrar_tentadas(tentadas):
-    print ("TENTADAS")
+    print ("\nTENTADAS")
     for i, letra in enumerate(tentadas):
         if letra:
             print (chr(i+65), "", end='')
         if i+1 % 5 == 0:
             print ()
-    print()
+    print("\n")
 
 def jogar(palavra, tema):
     Len = len(palavra)
@@ -43,13 +43,13 @@ def jogar(palavra, tema):
     pt, tent = 0, 0
     while tent != Len:
         if (pt == Len):
-            print (palavra, "\nVoce ganhou")
+            print ("\n", palavra, "\nVoce ganhou")
             return True
         mostrar_tentadas(tentadas)
         print (tema)
         for let in adivinha:
             print (let, end='')
-        let = input("\n")
+        let = input("\n").upper()
         intLet = ord(let)-65
         if rep[intLet] == 1:
             rep[intLet] = 2
@@ -59,9 +59,10 @@ def jogar(palavra, tema):
         elif rep[intLet] == 0:
             tentadas[intLet] = 1
             tent += 1
+            rep[intLet] = 2
         else:
-            print("Letra já escolhida")
-    print ("Voce perdeu.\nA palavra era", palavra)
+            print("\nLetra já escolhida")
+    print ("\nVocê perdeu.\nA palavra era", palavra)
     return False
 
 def selecionar_palavra():

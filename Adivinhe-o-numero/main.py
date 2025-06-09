@@ -2,15 +2,20 @@ from random import randint
 
 def tentativa(tent, num):
     cnt = 0
+    memo = [False]*num
     while tent != cnt:
         cnt += 1
         palp = int(input("\nNº: "))
-        if (palp < num):
-            print ("ERRADO! O NÚMERO SORTEADO É MAIOR")
-        elif (palp > num):
-            print ("ERRADO! O NÚMERO SORTEADO É MENOR")
+        if not memo[palp]:
+            if (palp < num):
+                print ("ERRADO! O NÚMERO SORTEADO É MAIOR")
+            elif (palp > num):
+                print ("ERRADO! O NÚMERO SORTEADO É MENOR")
+            else:
+                return True
         else:
-            return True
+            print ("Número já escolhido")
+            memo[num] = True
         print (f"TENTATIVAS: {cnt}/{tent}")
 
 def jogar():
