@@ -41,7 +41,6 @@ def jogar(palavra, tema):
     for i in mapa:
         rep[ord(i)-65] = 1
     pt, tent = 0, 0
-    print (Len)
     while tent != Len:
         if (pt == Len):
             print (palavra, "\nVoce ganhou")
@@ -69,7 +68,7 @@ def selecionar_palavra():
     temas = ["Animais", "Filmes famosos", "Esportes", "Países", "Comidas", "Personagens de desenhos animados", "Objetos do dia a dia"]
     tema = randint(0, 6)
     rand = randint(1, 50)
-    with open ("palavras.txt", "r", encoding="utf-8") as palavras:
+    with open ("Forca/palavras.txt", "r", encoding="utf-8") as palavras:
         palavra = palavras.readlines()[52*(tema)+rand]
     
     jogar(palavra.upper().rstrip("\n"), temas[tema])
