@@ -1,0 +1,363 @@
+Animais
+cachorro
+gato
+elefante
+jacare
+papagaio
+lobo
+golfinho
+cavalo
+coruja
+leao
+tigre
+tubarao
+aguia
+urso
+gorila
+camaleao
+polvo
+pinguim
+zebra
+aranha
+cobra
+carneiro
+rinoceronte
+esquilo
+hipopotamo
+tamandua
+tatu
+morcego
+raposa
+estrela do mar
+borboleta
+cisne
+falcao
+canguru
+chita
+guaxinim
+tarantula
+caracol
+urubu
+lagarto
+touro
+veado
+javali
+porco espinho
+suricato
+aguia real
+medusa
+tatu bola
+lontra
+lamure
+
+Filmes famosos
+Titanic
+Matrix
+Avatar
+Interestelar
+Gladiador
+O Poderoso Chefao
+Jurassic Park
+Vingadores
+Harry Potter
+Star Wars
+O Senhor dos Aneis
+Toy Story
+O Rei Leao
+Forrest Gump
+A Origem
+Clube da Luta
+O Diabo Veste Prada
+O Iluminado
+Corra!
+O Lobo de Wall Street
+A Rede Social
+Deadpool
+Procurando Nemo
+Up – Altas Aventuras
+Pantera Negra
+Guardioes da Galaxia
+Shrek
+O Exorcista
+Meu Malvado Favorito
+A Bela e a Fera
+Homem Aranha
+Os Incriveis
+O Grande Gatsby
+Doutor Estranho
+O Hobbit
+O Sexto Sentido
+Kill Bill
+Piratas do Caribe
+O Fabuloso Destino de Amelie Poulain
+O Labirinto do Fauno
+Divertida Mente
+A Forma da agua
+Os Vingadores – Ultimato
+Homem de Ferro
+O Estranho Mundo de Jack
+O Chamado
+A Viagem de Chihiro
+O Cavaleiro das Trevas
+Duna
+Wall E
+
+Esportes
+futebol
+basquete
+volei
+natacao
+atletismo
+tanis
+surfe
+ciclismo
+skate
+esgrima
+boxe
+MMA
+beisebol
+rugby
+handebol
+golfe
+hipismo
+tiro com arco
+remo
+salto em altura
+maratona
+ginastica artistica
+automobilismo
+patinacao no gelo
+hoquei
+badminton
+tiro esportivo
+luta livre
+levantamento de peso
+snowboard
+triatlo
+judo
+iatismo
+polo aquatico
+cricket
+curling
+corrida de obstaculos
+mergulho
+capoeira
+parkour
+windsurf
+esqui alpino
+corrida de revezamento
+arremesso de disco
+karata
+corrida de bicicleta
+caiaque
+sumo
+kung fu
+tanis de mesa
+
+Paises
+Brasil
+Japao
+Canada
+Australia
+Alemanha
+Franca
+Italia
+Mexico
+Russia
+China
+Argentina
+india
+Egito
+Portugal
+Espanha
+Coreia do Sul
+Estados Unidos
+Reino Unido
+africa do Sul
+Suecia
+Noruega
+Dinamarca
+Finlandia
+Polonia
+Tailandia
+Vietna
+Indonesia
+Nova Zelandia
+Colombia
+Peru
+Bolivia
+Chile
+Paraguai
+Equador
+Turquia
+Grecia
+Ucrania
+Arabia Saudita
+Emirados arabes
+Singapura
+Filipinas
+Cuba
+Venezuela
+Iraque
+Ira
+Paquistao
+Suica
+Holanda
+Belgica
+Malasia
+
+Comidas
+pizza
+sushi
+hamburguer
+lasanha
+churrasco
+feijoada
+pastel
+coxinha
+brigadeiro
+pudim
+tapioca
+risoto
+pao de queijo
+esfirra
+yakisoba
+ramen
+taco
+guacamole
+hot dog
+cheeseburger
+donuts
+croissant
+quiche
+ceviche
+moqueca
+frango assado
+costela
+batata frita
+omelete
+cachorro quente
+escondidinho
+bacalhau
+pao francas
+waffles
+panquecas
+arroz carreteiro
+polenta
+kebab
+shawarma
+canjica
+acaraje
+bolinho de chuva
+nachos
+fondue
+sorvete
+milkshake
+chocolate quente
+paella
+tamales
+churros
+
+Personagens de desenhos animados
+Mickey Mouse
+Pikachu
+Bob Esponja
+Scooby Doo
+Pateta
+Goku
+Naruto
+Tom (de Tom & Jerry)
+Jerry (de Tom & Jerry)
+Pato Donald
+Pernalonga
+Taz
+Cebolinha
+Cascao
+Monica
+Magali
+Smurfette
+Papa Smurf
+Homem Aranha (versao animada)
+Batman (versao animada)
+Superman (versao animada)
+Mulher Maravilha (versao animada)
+He Man
+She Ra
+Sonic
+Mario
+Luigi
+Bart Simpson
+Homer Simpson
+Lisa Simpson
+Stewie Griffin
+Brian Griffin
+Rick Sanchez
+Morty Smith
+Jake (Hora de Aventura)
+Finn (Hora de Aventura)
+Ben 10
+Dexter (Laboratorio de Dexter)
+Johnny Bravo
+Garfield
+Pantera Cor de Rosa
+Popeye
+Speed Racer
+Coragem (O Cao Covarde)
+Pica Pau
+Woody (Toy Story)
+Buzz Lightyear
+Timao (O Rei Leao)
+Pumba (O Rei Leao)
+Rapunzel (Enrolados)
+
+Objetos do dia a dia
+relogio
+cadeira
+celular
+mochila
+lapis
+caneta
+borracha
+caderno
+chave
+oculos
+fone de ouvido
+carregador
+mesa
+cama
+cobertor
+travesseiro
+chuveiro
+toalha
+escova de dentes
+pasta de dente
+sabonete
+espelho
+guarda chuva
+mochila
+mala
+garfo
+faca
+colher
+copo
+prato
+lampada
+computador
+notebook
+televisao
+radio
+ventilador
+ar condicionado
+liquidificador
+micro ondas
+fogao
+geladeira
+ferro de passar
+aspirador de po
+controle remoto
+tapete
+quadro
+caneca
+pilha
+garrafa
+mouse
