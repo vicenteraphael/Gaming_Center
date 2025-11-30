@@ -7,8 +7,8 @@ def inicializar_tabuleiro (dimensoes):
     while cnt < dimensoes:
         x = randint(0, dimensoes-1)
         y = randint(0, dimensoes-1)
-        if tabuleiro[x][y] != 1:
-            tabuleiro[x][y] = 1
+        if tabuleiro[y][x] != 1:
+            tabuleiro[y][x] = 1
             cnt += 1
 
     return tabuleiro
@@ -36,45 +36,47 @@ def mostrar_tabuleiro(tabuleiro, id, dimensoes, letras):
         print ("", x+1, end='')
     print()
 
-def check(x, y, tabuleiro, dimensoes):
-    if not 0 <= x <= dimensoes-1 and not 0 <= x <= dimensoes-1:
+def check(y, x, tabuleiro, dimensoes):
+    if not (0 <= y < dimensoes) or not (0 <= x < dimensoes):
         return True
-    match (tabuleiro[x][y] == 0):
-        case 0,1:
-            return True
+
+    if tabuleiro[y][x] in ("X", 0):
+        return True
+
     return False
+
 
 def ler_user_jogada(text, tabuleiro, dimensoes):
     while True:
         try:
             x, y = input(text).split()
             x, y = int(x)-1, ord(y.upper())-65
-            if check(x, y, tabuleiro, dimensoes):
+            if check(y, x, tabuleiro, dimensoes):
                 raise Exception
-            return [x, y]
+            return [y, x]
         except:
             print ("INAVELIDO")
 
 def ler_maq_jogada(tabuleiro, dimensoes):
     while True:
-        x, y = randint(0, dimensoes-1), randint(0, dimensoes-1)
-        if not check(x, y, tabuleiro, dimensoes):
-            return [x, y]
+        y, x = randint(0, dimensoes-1), randint(0, dimensoes-1)
+        if not check(y, x, tabuleiro, dimensoes):
+            return [y, x]
 
-def jogada (x, y, tabuleiro):
-    if tabuleiro[x][y] == 1:
-        tabuleiro[x][y] = 'X'
+def jogada (y, x, tabuleiro):
+    if tabuleiro[y][x] == 1:
+        tabuleiro[y][x] = 'X'
         return 1
-    tabuleiro[x][y] = 0
+    tabuleiro[y][x] = 0
     return 0
 
 def user_jogada(tabuleiro, dimensoes):
-    x, y = ler_user_jogada("Sua jogada: ", tabuleiro, dimensoes)
-    return jogada(x, y, tabuleiro)
+    y, x = ler_user_jogada("Sua jogada: ", tabuleiro, dimensoes)
+    return jogada(y, x, tabuleiro)
 
 def maq_jogada(tabuleiro, dimensoes):
-    x, y = ler_maq_jogada(tabuleiro, dimensoes)
-    return jogada(x, y, tabuleiro)
+    y, x = ler_maq_jogada(tabuleiro, dimensoes)
+    return jogada(y, x, tabuleiro)
 
 
 def jogar(user, maquina, dimensoes, letras):
@@ -91,11 +93,10 @@ def jogar(user, maquina, dimensoes, letras):
             return False
 
 def main():
-    dimensoes = 10
+    dimensoes = 5
     user = inicializar_tabuleiro(dimensoes)
     maquina = inicializar_tabuleiro(dimensoes)
     letras = [chr(i+65) for i in range(dimensoes)]
-    print (letras)
     while True:
         match input("Escolha:\n\n1) Jogar\n2) Sair\n\n"):
             case "1":
